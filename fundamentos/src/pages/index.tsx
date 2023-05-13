@@ -1,7 +1,7 @@
 import MenuItem from "@/components/templates/MenuItem";
 import Menu from "@/components/templates/Menu";
 import Page from "@/components/templates/Page";
-import { Icon24Hours, IconArrowMoveDown, IconArrowMoveUp, IconArrowsDiff, IconClick, IconClock, IconH1, IconSitemap, IconSourceCode, IconTable } from "@tabler/icons-react";
+import { Icon24Hours, IconArrowMoveDown, IconArrowMoveUp, IconArrowsDiff, IconClick, IconClock, IconDatabase, IconH1, IconNumbers, IconRotate2, IconSitemap, IconSourceCode, IconTable } from "@tabler/icons-react";
 import Line from "@/components/layouts/Line";
 
 export default function Home() {
@@ -49,6 +49,7 @@ export default function Home() {
                 API de usuários
             </MenuItem>
           </Line>
+
           <Line>
             <MenuItem
               icone={<IconH1 />}
@@ -88,6 +89,32 @@ export default function Home() {
               className="bg-gradient-to-r from-cyan-500 to-red-500"
               >
                 Comunicação Indireta
+            </MenuItem>
+          </Line>
+
+          <Line>
+            <MenuItem
+              icone={<IconNumbers />}
+              url="/examples/statePage"
+              className="bg-gradient-to-r from-blue-400 to-purple-600"
+              >
+                Com Estado
+            </MenuItem>
+
+            <MenuItem
+              icone={<IconDatabase />}
+              url="/examples/contextPage"
+              className="bg-gradient-to-r from-blue-400 to-purple-600"
+              >
+                Contexto Compartilhado
+            </MenuItem>
+
+            <MenuItem
+              icone={<IconRotate2 />}
+              url="/examples/salesPage"
+              className="bg-gradient-to-r from-blue-400 to-purple-600"
+              >
+                Conteúdo Server-Side
             </MenuItem>
           </Line>
       </Menu>
